@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    height: auto;
+    /* border: 2px solid rgb(155, 154, 154); */
+    overflow: auto;
+
+    
+}
+
+
+.items{
+    display: flex;
+    /* border: 2px solid black; */
+  height: 600px !important;
+  margin-top: 20px;
+
+    
+}
+.para{
+    width: 50%;
+    text-align: center;
+    /* border: 1px solid blue; */
+ 
+}
+.para p{
+   /* margin: 10% auto; */
+   font-size: 20px !important;
+   margin-left: 5px;
+   margin-top: 30%;
+
+   
+}
+.image{
+    /* border: 1px solid blue; */
+    padding-left: 30px;
+    width: 50%;
+overflow: auto;
+
+} 
+
+
+.image img{
+    max-width: 100%;
+    height: 100%;
+}
+.fa-solid{
+    color: blue;
+    font-size: 5em;
+    position: relative;
+    /* left: 0px; */
+    animation: change_pos 2s infinite;
+    animation-iteration-count: infinite;
+
+
+
+}
+
+@keyframes change_pos{
+    
+        from {left: 0px;}
+        to {left: 60%;}
+  
+        
+
+}
+
+
+
+
+.other-half{
+    width: 70%;
+    margin: 0 auto;
+
+
+}
+.box:hover{
+    background-color: rgb(141, 124, 124);
+    color: white !important;
+}
+h1{
+    margin-bottom: 10px !important;
+    margin-left: 5px !important;
+    font-weight: bold !important;
+/* border-bottom: 2px solid blue;    border: 1px solid blue; */
+}
+.bord{
+    border: 1px solid blue;
+    animation: width_exp 2s infinite;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes width_exp{
+    from{
+      width: 100%;
+    }
+    to{
+        width: 2px;
+
+    }
+}
+
+button{
+    margin-top: 20px  !important;
+    animation: change_texture 2s infinite;
+    animation-iteration-count: infinite;
+    
+
+
+
+}
+button a{
+    color: white;
+}
+
+@keyframes change_texture{
+    
+        from {left: 0px;}
+        to {        box-shadow: 0px 0px 5px 9px grey;
+
+        }
+  
+        
+
+}
+
+.box {
+    display: flex;
+    /* border: 1px solid black; */
+    height: 200px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 5px 1px grey;
+
+}
+
+.other-half h1{
+    margin-bottom: 50px !important;
+    animation: font 1s ease-in-out infinite;
+    
+}
+@keyframes font{
+    from{
+        font-size: 20px;
+    }
+    to{
+        font: 3em sans-serif;
+    }
+}
+
+
+.info{
+    margin: 10px 20px;
+}
+.logo1 img{
+    height: 70%;
+    animation: rotation 2s ease-in-out  ;
+    animation-iteration-count: infinite;
+
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    
+    }
+}
+.box h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+.box p{
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+
+
+@media (max-width:500px){
+
+.para{
+width: 60%;
+}
+.image{
+    width: 40%;
+}
+.other-half h1{
+    font-size: 25px !important;
+}
+
+.para p{
+    margin-top:20% !important ;
+    font-size: 16px !important;
+}
+.box{
+    flex-direction: column;
+    height: 350px;
+}
+.logo1{
+  width: auto;
+  height: 50%;
+  align-self: center;
+  /* border: 1px solid black; */
+}
+.logo1 img{
+    height: 100%;
+    width: auto;
+}
+.info{
+    width: auto;
+    height: 50%;
+text-align: center;
+margin: 5px;}
+
+.box h3{
+    font-size: 20px;
+    margin: 10px 0 8px;
+}
+
+
+}

@@ -1,0 +1,27 @@
+.c2{
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 700px; */
+}
+
+.c2 img{
+    max-width: auto;
+    height: 100%;
+    /* border: 1px solid black; */
+
+}
+
+.c2 button{
+    background-color: rgb(58, 144, 194) ;
+    color: white;
+}
+
+@media(max-width:500px){
+    .imageee{
+        font-size: 200px;
+    }
+}
